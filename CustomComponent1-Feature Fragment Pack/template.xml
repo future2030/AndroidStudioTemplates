@@ -1,0 +1,37 @@
+<template format="4"
+        revision="1"
+        name="Feature Fragment Pack"
+        description="Creates a Fragment, Module, ViewModel, and UiData model class">
+
+    <category value="Custom Components Pack"/>
+
+    <parameter
+        id="featurePackPrefix"
+        name="Feature pack name for kotlin class"
+        type="string"
+        constraints="unique|nonempty"
+        default="ClientLogin"
+        help="Common prefix for the feature pack" />
+
+
+        
+  
+
+
+    <parameter
+        id="packageName"
+        name="Feature Package name"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp.ui.login" />
+
+          <parameter
+        id="basePackageName"
+        name="Base App Package name"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp" />
+
+    <execute file="recipe.xml.ftl" />
+
+</template>
